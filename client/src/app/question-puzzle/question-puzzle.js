@@ -320,11 +320,11 @@
         };
 
         scope.disableScroll = function () {
-          angular.element(document.body).css("overflow", "hidden");
+          angular.element(document.body).css('overflow', 'hidden');
         };
 
         scope.enableScroll = function () {
-          angular.element(document.body).css("overflow", "auto");
+          angular.element(document.body).css('overflow', 'auto');
         };
 
         /**

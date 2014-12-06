@@ -2,7 +2,7 @@
 (function() {
   'use strict';
 
-  describe('HomeCtrl', function() {
+  xdescribe('HomeCtrl', function() {
     var rootScope;
     var fakeData = ['some', 'data'];
     var ctrl;
