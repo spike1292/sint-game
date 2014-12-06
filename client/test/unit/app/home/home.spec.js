@@ -1,15 +1,15 @@
 /* jshint undef:false*/
-(function() {
+(function () {
   'use strict';
 
-  xdescribe('HomeCtrl', function() {
+  xdescribe('HomeCtrl', function () {
     var rootScope;
     var fakeData = ['some', 'data'];
     var ctrl;
     var scope;
 
     beforeEach(module('app'));
-    beforeEach(inject(function($rootScope, $controller) {
+    beforeEach(inject(function ($rootScope, $controller) {
       rootScope = $rootScope;
       scope = $rootScope.$new();
       ctrl = $controller('HomeCtrl as home', {
@@ -20,11 +20,11 @@
       });
     }));
 
-    it('should not be null', function() {
+    it('should not be null', function () {
       expect(ctrl).not.toEqual(null);
     });
 
-    it('should have "data" into its $scope', function() {
+    it('should have "data" into its $scope', function () {
       expect(scope.home.data[0]).toEqual('some');
       expect(scope.home.data[1]).toEqual('data');
       expect(scope.home.data.length).toEqual(2);

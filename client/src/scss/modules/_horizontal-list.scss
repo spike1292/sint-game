@@ -3,12 +3,12 @@
   @extend %text-center;
   @include box-reset();
   padding: 0 0 2em 0;
-  >li {
+  > li {
     display: inline-block;
     margin-left: 1em;
     a.tweet {
-      position:relative;
-      top:-3px;
+      position: relative;
+      top: -3px;
     }
   }
 }

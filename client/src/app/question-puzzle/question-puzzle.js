@@ -307,6 +307,10 @@
          */
         scope.selectStart = function (item) {
           selectFrom = item;
+          angular.element(document.body).css('overflow', 'hidden');
+          angular.element(document.body).on('touchmove', function (e) {
+            e.preventDefault();
+          });
         };
 
         /**
@@ -334,6 +338,8 @@
           selectFrom = null;
           scope.puzzle.lookup(scope.selected);
           scope.selected = [];
+          angular.element(document.body).css('overflow', 'auto');
+          angular.element(document.body).off('touchmove');
         };
 
         // propagate selection state to matrix
@@ -348,7 +354,6 @@
       }
     };
   }
-
 
   var question2Module = angular.module('question-puzzle', [])
     .config(config)

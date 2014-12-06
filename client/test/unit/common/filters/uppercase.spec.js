@@ -1,16 +1,16 @@
 /* jshint undef:false*/
-(function() {
+(function () {
   'use strict';
 
-  describe('Filters: uppercase', function() {
+  describe('Filters: uppercase', function () {
 
     var filter;
     beforeEach(module('common.filters.uppercase'));
-    beforeEach(inject(function($filter) {
+    beforeEach(inject(function ($filter) {
       filter = $filter;
     }));
 
-    it('should create an uppercase string', function() {
+    it('should create an uppercase string', function () {
       expect(filter('uppercase')('hello')).toEqual('HELLO');
     });
   });

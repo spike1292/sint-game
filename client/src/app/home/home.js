@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   /**
@@ -23,7 +23,7 @@
    * @description Controller
    */
   function HomeCtrl($state) {
-    this.start = function(){
+    this.start = function () {
       $state.go('root.question01');
     };
   }

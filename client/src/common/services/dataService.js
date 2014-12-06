@@ -1,9 +1,9 @@
-(function() {
+(function () {
   'use strict';
 
   function dataService() {
     return {
-      get: function() {
+      get: function () {
         return ['some', 'data'];
       }
     };

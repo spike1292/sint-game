@@ -1,11 +1,11 @@
-(function() {
+(function () {
   'use strict';
 
   function versionDirective(version) {
     return {
       restrict: 'A',
       /*jshint unused:false*/
-      link: function(scope, elm, attrs) {
+      link: function (scope, elm, attrs) {
         elm.text(version);
       }
     };

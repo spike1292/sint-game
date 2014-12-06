@@ -1,8 +1,8 @@
-(function() {
+(function () {
   'use strict';
 
   function uppercase() {
-    return function(text) {
+    return function (text) {
       return text ? text.toUpperCase() : text;
     };
   }

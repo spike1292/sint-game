@@ -24,7 +24,7 @@
    */
   function XQuestionCtrl($state) {
     this.x = function () {
-      $state.go('root.question-puzzle');
+      $state.go('root.question-rebus');
     };
 
     this.next = function () {
