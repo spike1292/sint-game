@@ -1,0 +1,57 @@
+.word-search-puzzle {
+  td {
+    background-color: white;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  .puzzle-solved td {
+    background-color: #eee;
+  }
+  td span {
+    display: table-cell;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+  }
+  .puzzle-found {
+    background-color: #eee;
+  }
+  .puzzle-selected {
+    background-color: #f5f5f5;
+  }
+  .puzzle-message span {
+    background-color: #ffffcc;
+    color: red;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #444;
+  }
+}
+
+.word-search {
+  position: relative;
+
+  .word-search-puzzle {
+    float: left;
+  }
+  .words {
+    list-style: none;
+    float: left;
+    margin: 4px 20px 0 0;
+  }
+  .words li {
+    font-size: 12px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  .words .found {
+    color: #bbb;
+    text-decoration: line-through;
+    font-weight: normal
+  }
+}

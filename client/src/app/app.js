@@ -1,7 +1,7 @@
-(function() {
+(function () {
   'use strict';
 
-  angular.element(document).ready(function() {
+  angular.element(document).ready(function () {
     angular.bootstrap(document, ['app']);
   });
 
@@ -32,10 +32,13 @@
     $log.debug('App is running!');
   }
 
-  angular.module('app', [
+  angular
+    .module('app', [
       'ui.router',
       'home',
-      'getting-started',
+      'question01',
+      'question-puzzle',
+      'question-x',
       'common.header',
       'common.footer',
       'common.services.data',

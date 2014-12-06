@@ -2,4 +2,9 @@
   .pure-g > div {
     @include box-sizing();
   }
+  .pure-g {
+    background: url(/assets/images/well_bg.png);
+    border: 1px solid #f4cb65;
+    border-radius: 4px;
+  }
 }
